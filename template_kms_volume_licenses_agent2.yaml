@@ -59,6 +59,7 @@ zabbix_export:
               key: 'kms.license.expire.days[{#PRODUCTID}]'
               delay: 1h
               trends: 36d
+              units: d
               params: '(last(//kms.license.minutes[{#PRODUCTID}]) / 1440)'
             - uuid: 9a792d9b3b0442898c8ac44f1d26270f
               name: '{#PRODUCTNAME}: Technical: Grace minutes'
@@ -84,24 +85,6 @@ zabbix_export:
           graph_prototypes:
             - uuid: 2bd928c207ef4124a28f9ebb29197dc7
               name: '{#PRODUCTNAME}: Activation countdown'
-              yaxismax: '0'
-              graph_items:
-                - color: 1A7C11
-                  calc_fnc: ALL
-                  item:
-                    host: 'KMS and Volume Licenses by Zabbix agent 2'
-                    key: 'kms.license.days[{#PRODUCTID}]'
-            - uuid: e516552f88c74900b21c4acbec8fb9b4
-              name: '{#PRODUCTNAME}: KMS activation remaining'
-              yaxismax: '0'
-              graph_items:
-                - color: 1A7C11
-                  calc_fnc: ALL
-                  item:
-                    host: 'KMS and Volume Licenses by Zabbix agent 2'
-                    key: 'kms.license.days[{#PRODUCTID}]'
-            - uuid: 991ce5b69ccc4cfd83455124dd0b48fd
-              name: '{#PRODUCTNAME}: license expiration forecast'
               yaxismax: '0'
               graph_items:
                 - color: 1A7C11
