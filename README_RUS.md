@@ -249,19 +249,6 @@ license is not activated
 
 ---
 
-# Лицензия
-
-MIT License
-
-```
-MIT License
-
-Copyright (c) 2024
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files to deal in the Software
-without restriction.
-
 # Автор
 
 Проект предназначен для централизованного мониторинга лицензий Windows и Office через Zabbix.
